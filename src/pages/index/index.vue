@@ -15,9 +15,7 @@ export default {
     methods:
     {
         change_btn(){
-            store.commit('login', {
-                user_info : 'vip'
-            })
+            store.commit('login')
         },
     }
 }

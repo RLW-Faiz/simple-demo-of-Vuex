@@ -3,15 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import store from './store'
 import Vuex from  'vuex'
+import store from './store'
 
 Vue.config.productionTip = false
 
 Vue.use(Vuex)
 
 Vue.prototype.$store = store
-
 router.beforeEach((to, from, next) => {
   if(store.state.user_info || to.path === '/login'){
     next()

@@ -23,7 +23,7 @@ export default {
           store.commit('login', {
             user_name: that.user_name,
             user_pwd: that.user_pwd,
-            user_info: '普通'
+            user_info: 1
           },500)
           that.$router.push("./")
         })
